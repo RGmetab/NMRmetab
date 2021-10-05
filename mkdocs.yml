@@ -1,0 +1,66 @@
+site_name: NMR Metabolomics
+site_description: This web site provides an interface for NMR Metabolomics Protocols
+site_author: Rudi Grosman - University of Liverpool NMRC
+
+theme:
+  name: material
+  language: en
+  favicon: logo.png
+  logo: logo.png
+  colorscheme: github
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - python
+    - bash
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+#    - navigation.expand
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+#          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid
+  - admonition
+
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+
+extra:
+  version:
+    provider: mike
+
+plugins:
+#  - git-revision-date: # Needs GIT_PYTHON_REFRESH environment to be set
+#      enabled_if_env: CI
+  - search
+#  - print-site
+  - mermaid2:
+      arguments:
+        securityLevel: 'loose'
