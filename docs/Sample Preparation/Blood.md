@@ -1,5 +1,8 @@
 # Plasma and Serum
 
+Author: Marie Phelan
+Revision Date: 4 October 2016
+
 ## Sample Preparation
 
 Avoid citrate and other added stabilizers since they give additional signals in the NMR spectra. Also, collection tubes should be avoided, which use gel to separate blood cells from plasma.

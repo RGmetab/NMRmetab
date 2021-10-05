@@ -5,8 +5,8 @@ site_author: Rudi Grosman - University of Liverpool NMRC
 theme:
   name: material
   language: en
-  favicon: logo.png
-  logo: logo.png
+#  favicon: logo.png
+#  logo: logo.png
   colorscheme: github
   highlightjs: true
   hljs_languages:
