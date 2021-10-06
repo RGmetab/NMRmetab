@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="This web site provides an interface for NMR Metabolomics Protocols" name="description"/>
+<meta content="Rudi Grosman - University of Liverpool NMRC" name="author"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.3.0" name="generator"/>
+<title>A selection of statistical analyses in MetaboAnalyst - NMR Metabolomics</title>
+<link href="../../../assets/stylesheets/main.8b42a75e.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+</head>
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
+<script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#a-selection-of-statistical-analyses-in-metaboanalyst">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="NMR Metabolomics" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="NMR Metabolomics">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            NMR Metabolomics
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              A selection of statistical analyses in MetaboAnalyst
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="" data-md-color-primary="" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+      Welcome to the NMR Metabolomics protocol portal!
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../../Data%20Annotation/Chenomx%20Profiler/">
+        Data Analysis
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../Resources/Background%20Reading/">
+        Resources
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../Sample%20Preparation/Blood/">
+        Sample Preparation
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="NMR Metabolomics" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="NMR Metabolomics">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    NMR Metabolomics
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Welcome to the NMR Metabolomics protocol portal!
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          Data Analysis
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Data Analysis" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Data Analysis
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" id="__nav_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1">
+          Data Annotation
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Data Annotation" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Data Annotation
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Annotation/Chenomx%20Profiler/">
+        Chenomx Profiler Metabolite Identification - Quick Guide
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Annotation/Correct%20annotation%20of%20Spreadsheet%20for%20import%20into%20IconNMR/">
+        Correct annotation of Spreadsheet for import into IconNMR
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Annotation/Patter%20File%20Preparation/">
+        Pattern File Preparation Guide
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          Data Quality Control
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Data Quality Control" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Data Quality Control
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Quality%20Control/TameNMR/">
+        Tame NMR
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Quality%20Control/Topspin%20Quality%20Control/">
+        Criteria for Quality Control
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Statistical Analyses
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Statistical Analyses" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Statistical Analyses
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Pathway%20Analysis%20in%20MetaboAnalyst/">
+        Pathway Analysis in MetaboAnalyst
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          A selection of statistical analyses in MetaboAnalyst
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        A selection of statistical analyses in MetaboAnalyst
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#part-1-submitting-data">
+    Part 1 Submitting Data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#part-3-modifying-and-extracting-the-data">
+    Part 3 Modifying and extracting the data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#part-4-download">
+    Part 4 Download
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#more-information">
+    More Information
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          Resources
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Resources" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Resources
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Resources/Background%20Reading/">
+        Background Reading
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Sample Preparation
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Sample Preparation" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Sample Preparation
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sample%20Preparation/Blood/">
+        Plasma and Serum
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sample%20Preparation/Cells%20Intracellular/">
+        Intracellular Metabolite Extraction from Cell Culture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sample%20Preparation/Cells/">
+        Intracellular Metabolite Extraction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sample%20Preparation/Tissues/">
+        Tissue Sample Preparation – Soluble Metabolites
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sample%20Preparation/Urine/">
+        Urine Sample Preparation
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#part-1-submitting-data">
+    Part 1 Submitting Data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#part-3-modifying-and-extracting-the-data">
+    Part 3 Modifying and extracting the data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#part-4-download">
+    Part 4 Download
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#more-information">
+    More Information
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="a-selection-of-statistical-analyses-in-metaboanalyst">A selection of statistical analyses in MetaboAnalyst</h1>
+<p>Authors: Marie Phelan &amp; Eva Caamaño-Gutiérrez
+Revision Date: 2 November 2017</p>
+<h2 id="part-1-submitting-data">Part 1 Submitting Data</h2>
+<p>Open MetaboAnalyst at www.metaboanalyst.ca </p>
+<ol>
+<li>Click on “click here to start”</li>
+<li>Upload data for Statistical Analysis</li>
+<li>Peak intensity table works for AMIX exported bucket tables</li>
+<li>Upload your file here in .csv format</li>
+<li>Submit- errors will appear if file is not correctly formatted <strong>Edit the .csv file output from AMIX for correct upload to MetaboAnalyst.</strong></li>
+</ol>
+<p>Some of the editing needed to make the file compatible with MetaboAnalyst involves the incorporation of some key information for the analysis, for example:</p>
+<ul>
+<li>Open bucket file in spreadsheet software.</li>
+<li>
+<p>Add a new column after the name of each spectrum (See example spreadsheet on Metaboanalyst). The first column (name) corresponds to the sample identity kept from the spectrometer. The second column (group) contains the key information for future grouping and testing.</p>
+</li>
+<li>
+<p>Data check</p>
+</li>
+</ul>
+<p>Once you have uploaded your file the data integrity check screen will appear. In this step you can decide how to deal with missing values if applicable. There is functionality to choose to ignore variables with over a percentage of samples missing or to use an algorithm to estimate those missing values. However, most of the data produced via the tools presented in this workshop will not require this step and we can click “skip”. </p>
+<ol>
+<li>Data filtering</li>
+</ol>
+<p>This functionality is paramount when trying to reduce dimensionality of the data for computational purposes (many variables=longer computational time) and to reduce unwanted variance, specially remove outliers. However, if you have less than 2000 variables/bucket/metabolites and you are unsure on how to filter your data, you can choose to not filter your data (“none).</p>
+<ol>
+<li>Normalisation Options</li>
+</ol>
+<p>The aim of <strong>normalisation</strong> is to make <u>samples</u> comparable (for example to reduce variation due to dilution effects, ‘pipetters’ or ). Some examples include normalisation by an internal standard e.g. a metabolite that is at constant concentration between treatments or If looking at a time series for example we could also normalise all other samples by the time zero. Some data transformations also aid in some analyses. For example log transformation is usually helpful in biological data that which distribution is skewed towards positive values. Each dataset is different and requires its own evaluation.</p>
+<p><strong>Scaling</strong> is a way of making the <u>variables</u> in the data more similar in range. If the variables are of different scale some linear analysis methods (like PCA) will tend to be influenced more by larger variables skewing the results. <em>Pareto</em> scaling is a popular choice in metabolomics studies and is available in MetaboAnalyst.</p>
+<p>When you have finished, click Submit to view the data normalisation (see Figure below). After the transformations the data is centred around zero and is of similar scale, with not variables overweighting by solely their nature instead of the effect the treatments have on them. It is ready for further analysis, press next</p>
+<p>Click <strong>Submit</strong> to view the data normalisation.</p>
+<p>After the transformations the data is centred around zero and is of similar scale. It is ready for further analysis. <strong>Submit</strong> </p>
+<p>The data is now prepared for application of the numerous statistical tests available in MetaboAnalyst.</p>
+<p>Different tests are available depending on how many cohorts (GROUPS) you have. In this example there are more than Two cohorts, Thus multivariate tests such as ANOVA and available and twofold tests such as T-Test and Fold Changes are not.</p>
+<p>## Part 2 Statistical Analysis</p>
+<p>You can now explore the statistical tests MetaboAnalyst offers. Different tests are available depending on how many cohorts (CLASS/GROUP) you have. We have &gt;2 cohorts, so multivariate tests such as ANOVA are available but not tests for only two variables such as t-test.</p>
+<p>## Part 2a Statistical Analysis – ANOVA</p>
+<ol>
+<li>
+<p>Choose parameters &amp; explore data</p>
+<ol>
+<li>Choose a p-value threshold </li>
+<li>Choose post hoc analysis technique (method to do cohort comparisons on significant points (both Fisher and Tukey) and correct for false positives (Tukey)). </li>
+<li>Red data points are significantly different </li>
+<li>Dotted line represents the p-value cut-off </li>
+<li>Blue data points are not significantly different </li>
+<li>Click on each data point to get a box plot showing the different in intensity of the peak at that ppm between the samples. </li>
+<li>Clicking on the table shows the post-hoc table (see next page)</li>
+<li>Click on the paint palette to download images</li>
+</ol>
+</li>
+<li>
+<p>Post-hoc tables are available from the ANOVA</p>
+<p>The Table only reports those buckets that are significantly different between cohorts, in the post-hoc tests section it can be seen between which cohorts the bucket is significantly different.</p>
+<p>Clicking on each of the buckets (1.914Lys, for example) brings up a box plot of the differences of that bucket between cohorts.</p>
+<p>The table is downloadable as well as the box plots.</p>
+</li>
+</ol>
+<p>## Part 2b Heat maps</p>
+<p>Heat maps are a very useful visualisation method. For a quick overview of how the groups are different between them in relation to the bucket signal.</p>
+<p>## Part 2c Statistical Analysis – PCA</p>
+<p>To launch PCA analysis select PCA from side menu (red arrow)</p>
+<p>1) In the Overview you can visualise your data to five principle components (PC's) with a pairwise score plot for each PC against every other PC</p>
+<p>2) Scree plot - shows % explained variance both per PC and cumulatively</p>
+<p>3) 2D scores plot - shows scores for annotated samples (including 95% confidence elipsoid) for specified PCs</p>
+<p>4) 3D scores plot - shows moveable cube with 3 PCs plotted against each other. Hover mouse over each point to get specific sample information.</p>
+<p>5) Loadings plot - shows metabolite bucket weightings responsible for specified PCs. Hover the mouse over individual point to obtain specific bucket weighting. Click on specific point to see a boxplot representation.</p>
+<p>6) Biplot – combines sample score to most influential buckets.</p>
+<p>## Part 2d Statistical Analysis – PLS-DA and OPLS-DA</p>
+<p>Partial Least Squares-Discriminant Analysis (PLS-DA) and Orthogonal Projections to Latent Structures (O-PLS) are supervised multivariate analyses. Similar to PCA the PLSDA algorithm can be launched by clicking the tab. The output will be akin to PCA’s but with some key differences. Main similarities are the score plots of the PLS components and the loadings. Similarly than with PCA, latent variables arise that provide new projections (scores) and to which the original variables have certain contribution (loadings).</p>
+<p>Because <u>over-fitting</u> is a very important issue, there are main methods to try to control it implemented in MetaboAnalyst. These provide statistical insight on how many variables to choose to create the model. The algorithm implemented within MetaboAnalyst should automatically select chosen the best fit for the data.</p>
+<p>1) <u>Cross Validation</u></p>
+<p>In the cross-validation tab several parameters can be selected such as the performance measure. The optimal is set to Q<sup>2</sup> , which is the cross-validated sum of squares captured by the model.</p>
+<p>Another method to control over fitting is permutation test. These rely on assessing how likely is to get the separation obtained by the model randomly. For that purpose, the labels (groups/cohorts) are randomised/unordered and the model is made again. With random labels, no significant differences should be found between groups. This process is repeated iteratively 100, 1000 or 2000 times (in MetaboAnalyst) and allows deriving the probability of separating the original groups just by chance. A low p value indicates that the chances for the grouping to be random are low. </p>
+<p>2) <u>Importance Features</u></p>
+<p>In the tab “Imp. Features”, there are two variable importance measures in PLS-DA, that can be downloaded by pressing on the little sheet icon.</p>
+<p>The first, Variable Importance in Projection (VIP), is a weighted sum of squares of the PLS loadings taking into account the amount of explained Y-variation, in each dimension this can be interpreted as a measure of the contribution <u>or importance of a variable to the model</u>. Since VIP scores are calculated for each component when more than 1 component are used to calculate the feature importance the average of the VIP scores are used.</p>
+<p>The other importance measure is based on the weighted sum of PLS-regression. The weights are a function of the reduction of the sums of squares across the number of PLS components. The coefficient of each feature will be different depending on which group you want to predict. The average of the feature coefficients are used as the overall coefficient-based importance.</p>
+<p>3) <u>OPLS-DA</u> </p>
+<p>The last feature that has been implemented in MetaboAnalyst is OPLS. Documentation is still limited but it is note worthy the visualisation improvement that might provide with respect to PLSDA (see below, groups separation is more obvious with only two dimensions).</p>
+<h2 id="part-3-modifying-and-extracting-the-data">Part 3 Modifying and extracting the data</h2>
+<ol>
+<li>At any time the left hand menu allows modification of the dataset under investigation. Selecting upload, processing and normalisation will return to the corresponding process. Selecting Statistics opens a list of statistical analyses available in MetaboAnalyst for the particular dataset (dependent on number of groups etc.)</li>
+</ol>
+<h2 id="part-4-download">Part 4 Download</h2>
+<p>In the Download section all or part of the analysis results can be downloaded.</p>
+<p>Clicking on the Download.zip downloads everything in one zipped file. This is sometimes a good option as MetaboAnalyst will time out after a period of inactivity require re-inputting of the data.</p>
+<p>Logging out ends your session and the data will no longer be available so make sure you have downloaded everything you need before you do this.</p>
+<h2 id="more-information">More Information</h2>
+<p>Jianguo Xia &amp; David S Wishart “Web-based inference of biological patterns, functions and pathways from metabolomic data using MetaboAnalyst” Nature Protocols 6, 743-760 (2011) doi:<a href="https://doi.org/10.1038/nprot.2011.319">10.1038/nprot.2011.319</a></p>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Pathway Analysis in MetaboAnalyst" class="md-footer__link md-footer__link--prev" href="../Pathway%20Analysis%20in%20MetaboAnalyst/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Pathway Analysis in MetaboAnalyst
+            </div>
+</div>
+</a>
+<a aria-label="Next: Background Reading" class="md-footer__link md-footer__link--next" href="../../../Resources/Background%20Reading/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Background Reading
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+            Material for MkDocs
+          </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.indexes", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.f8263e09.min.js", "version": {"provider": "mike"}}</script>
+<script src="../../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
+<script src="../../../javascripts/config.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
