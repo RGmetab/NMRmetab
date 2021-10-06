@@ -1,4 +1,4 @@
-Correct annotation of Spreadsheet for import into IconNMR
+# Correct annotation of Spreadsheet for import into IconNMR
 
 Authors: Marie Phelan & Rudi Grosman 
 Revision Date: 1 November 2017
