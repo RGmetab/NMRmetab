@@ -8,10 +8,10 @@ Here you can find the protocols used by the NMR Metabolomics group. Protocols ar
 1. Data Analysis
 
 ## Usage
-Inidividual protocols can be selected by expanding the categories on the left hand side.
+Individual protocols can be selected by expanding the categories on the left hand side.
 Protocols or contents can be searched through the magnifying glass icon on the top right.
 
-## Adding, Modifiying or Reporting.
+## Adding, Modifying or Reporting.
 Please contact [Rudi Grosman](mailto:r.grosman@liverpool.ac.uk "r.grosman@liverpool.ac.uk") for addition modification of protocols as well as reporting bugs.
 
 Good luck with your experiments and remember:
