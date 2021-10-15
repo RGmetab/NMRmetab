@@ -15,4 +15,4 @@ Protocols or contents can be searched through the magnifying glass icon on the t
 Please contact [Rudi Grosman](mailto:r.grosman@liverpool.ac.uk "r.grosman@liverpool.ac.uk") for addition modification of protocols as well as reporting bugs.
 
 Good luck with your experiments and remember:
-> If at first you don't succeed try two more times so that your failure is statiscally significant!
+> If at first you don't succeed try two more times so that your failure is statistically significant!
