@@ -5,7 +5,7 @@ Revision Date: 1 November 2017
 
 A pattern file can enhance the ease of analysis and identification of metabolites influencing statistical groupings. Pattern files form the basis for bucketing in AMIX enabling metabolite details to be encoded in the matrix of peak intensities taken forward for statistical analysis.
 
-![PatternTable](.\Pattern_Table.jpg)
+![PatternTable](Pattern_Table.jpg)
 
 The format of the pattern file must be adhered to – any deviation may corrupt AMIX bucketing. Spaces and row information is critical for this Plain text document therefore it is recommended that the file is prepared using a text editor such as nedit, gedit or notepad in order to avoid undesired formatting.
 
