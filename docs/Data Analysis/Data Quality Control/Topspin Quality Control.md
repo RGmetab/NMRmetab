@@ -5,13 +5,13 @@ Revision Date: 2 November 2017
 
 ## QC Criteria
 
-|      | QC                                                           | e.g.                             |
-| ---- | ------------------------------------------------------------ | -------------------------------- |
-| 1    | Shape and width of reference peak (usually TSP) Line width typically measured at half height | ![4_1_QC1](.\images\4_1_QC1.PNG) |
-| 2    | Baseline flat without curvature or sine wiggle.              | ![4_1_QC2](.\images\4_1_QC2.PNG) |
-| 3    | Signal to noise as expected (check against representative spectrum) | ![4_1_QC3](.\images\4_1_QC3.PNG) |
-| 4    | Water suppression good. Narrow water signal (between 0.2 and 0.4 ppm wide). No baseline distortion beyond that range. | ![4_1_QC4](.\images\4_1_QC4.PNG) |
-| 5    | Phasing good throughout spectra                              | ![4_1_QC5](.\images\4_1_QC5.png) |
+|      | QC                                                           | e.g.                       |
+| ---- | ------------------------------------------------------------ | -------------------------- |
+| 1    | Shape and width of reference peak (usually TSP) Line width typically measured at half height | ![4_1_QC1](..\4_1_QC1.PNG) |
+| 2    | Baseline flat without curvature or sine wiggle.              | ![4_1_QC2](4_1_QC2.PNG)    |
+| 3    | Signal to noise as expected (check against representative spectrum) | ![4_1_QC3](4_1_QC3.PNG)    |
+| 4    | Water suppression good. Narrow water signal (between 0.2 and 0.4 ppm wide). No baseline distortion beyond that range. | ![4_1_QC4](4_1_QC4.PNG)    |
+| 5    | Phasing good throughout spectra                              | ![4_1_QC5](./4_1_QC5.png)  |
 
 ## Topspin Shortcuts
 
