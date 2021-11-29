@@ -35,6 +35,11 @@ theme:
 
 
 markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.arithmatex:
