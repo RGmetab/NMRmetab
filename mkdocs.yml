@@ -18,7 +18,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-#    - navigation.expand
     - navigation.tracking
     - navigation.indexes
     - navigation.top
@@ -36,13 +35,14 @@ theme:
 
 
 markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
-#          format: !!python/name:pymdownx.superfences.fence_code_format
           format: !!python/name:mermaid2.fence_mermaid
   - admonition
 
@@ -59,10 +59,7 @@ extra:
     provider: mike
 
 plugins:
-#  - git-revision-date: # Needs GIT_PYTHON_REFRESH environment to be set
-#      enabled_if_env: CI
   - search
-#  - print-site
   - mermaid2:
       arguments:
         securityLevel: 'loose'
