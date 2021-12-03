@@ -1,6 +1,6 @@
 site_name: NMR Metabolomics
 site_description: This web site provides an interface for NMR Metabolomics Protocols
-site_author: Rudi Grosman - University of Liverpool NMRC
+site_author: Rudi Grosman - University of Liverpool NMRF
 site_url: https://rgmetab.github.io/NMRmetab/
 
 theme:
