@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="This web site provides an interface for NMR Metabolomics Protocols" name="description"/>
+<meta content="Rudi Grosman - University of Liverpool NMRF" name="author"/>
+<link href="https://rgmetab.github.io/NMRmetab/Miscellaneous/Tube%20washing/" rel="canonical"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.6" name="generator"/>
+<title>Tube Washing for NMR Metabolomics - NMR Metabolomics</title>
+<link href="../../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../css/print-site-enum-headings1.css" rel="stylesheet"/>
+<link href="../../css/print-site-enum-headings2.css" rel="stylesheet"/>
+<link href="../../css/print-site-enum-headings3.css" rel="stylesheet"/>
+<link href="../../css/print-site-enum-headings4.css" rel="stylesheet"/>
+<link href="../../css/print-site-enum-headings5.css" rel="stylesheet"/>
+<link href="../../css/print-site-enum-headings6.css" rel="stylesheet"/>
+<link href="../../css/print-site.css" rel="stylesheet"/>
+<link href="../../css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#tube-washing-for-nmr-metabolomics">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-component="outdated" hidden="">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="NMR Metabolomics" class="md-header__button md-logo" data-md-component="logo" href="../.." title="NMR Metabolomics">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            NMR Metabolomics
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Tube Washing for NMR Metabolomics
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="" data-md-color-primary="" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+      Welcome to the NMR Metabolomics protocol portal!
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Data%20Analysis/Data%20Annotation/Chenomx%20Profiler/">
+        Data Analysis
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="./">
+        Miscellaneous
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Resources/Background%20Reading/">
+        Resources
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Sample%20Preparation/Blood/">
+        Sample Preparation
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="NMR Metabolomics" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="NMR Metabolomics">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    NMR Metabolomics
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Welcome to the NMR Metabolomics protocol portal!
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          Data Analysis
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Data Analysis" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Data Analysis
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" id="__nav_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1">
+          Data Annotation
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Data Annotation" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Data Annotation
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_1" id="__nav_2_1_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Data%20Analysis/Data%20Annotation/Chenomx%20Profiler/">Chenomx Profiler</a>
+</div>
+<nav aria-label="Chenomx Profiler" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_1_1">
+<span class="md-nav__icon md-icon"></span>
+          Chenomx Profiler
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_2" id="__nav_2_1_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Data%20Analysis/Data%20Annotation/Correct%20annotation%20of%20Spreadsheet%20for%20import%20into%20IconNMR/">Correct annotation of Spreadsheet for import into IconNMR</a>
+</div>
+<nav aria-label="Correct annotation of Spreadsheet for import into IconNMR" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_1_2">
+<span class="md-nav__icon md-icon"></span>
+          Correct annotation of Spreadsheet for import into IconNMR
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_3" id="__nav_2_1_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Data%20Analysis/Data%20Annotation/Patter%20File%20Preparation/">Patter File Preparation</a>
+</div>
+<nav aria-label="Patter File Preparation" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_1_3">
+<span class="md-nav__icon md-icon"></span>
+          Patter File Preparation
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          Data Quality Control
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Data Quality Control" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Data Quality Control
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_1" id="__nav_2_2_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Data%20Analysis/Data%20Quality%20Control/TameNMR/">TameNMR</a>
+</div>
+<nav aria-label="TameNMR" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_1">
+<span class="md-nav__icon md-icon"></span>
+          TameNMR
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2" id="__nav_2_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Data%20Analysis/Data%20Quality%20Control/Topspin%20Quality%20Control/">Topspin Quality Control</a>
+</div>
+<nav aria-label="Topspin Quality Control" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Topspin Quality Control
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Statistical Analyses
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Statistical Analyses" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Statistical Analyses
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_1" id="__nav_2_3_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Data%20Analysis/Statistical%20Analyses/Pathway%20Analysis%20in%20MetaboAnalyst/">Pathway Analysis in MetaboAnalyst</a>
+</div>
+<nav aria-label="Pathway Analysis in MetaboAnalyst" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_1">
+<span class="md-nav__icon md-icon"></span>
+          Pathway Analysis in MetaboAnalyst
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_2" id="__nav_2_3_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Data%20Analysis/Statistical%20Analyses/Statistical%20Analysis%20in%20MetaboAnalyst/">Statistical Analysis in MetaboAnalyst</a>
+</div>
+<nav aria-label="Statistical Analysis in MetaboAnalyst" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_2">
+<span class="md-nav__icon md-icon"></span>
+          Statistical Analysis in MetaboAnalyst
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          Miscellaneous
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Miscellaneous" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Miscellaneous
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" id="__nav_3_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index md-nav__link--active">
+<a href="./">Tube washing</a>
+</div>
+<nav aria-label="Tube washing" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+          Tube washing
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Resources
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Resources" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Resources
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" id="__nav_4_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Resources/Background%20Reading/">Background Reading</a>
+</div>
+<nav aria-label="Background Reading" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+          Background Reading
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          Sample Preparation
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Sample Preparation" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Sample Preparation
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" id="__nav_5_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Sample%20Preparation/Blood/">Blood</a>
+</div>
+<nav aria-label="Blood" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_1">
+<span class="md-nav__icon md-icon"></span>
+          Blood
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" id="__nav_5_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Sample%20Preparation/Cells/">Cells</a>
+</div>
+<nav aria-label="Cells" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+          Cells
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Sample%20Preparation/Cells%20Intracellular/">Cells Intracellular</a>
+</div>
+<nav aria-label="Cells Intracellular" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Cells Intracellular
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" id="__nav_5_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Sample%20Preparation/Tissues/">Tissues</a>
+</div>
+<nav aria-label="Tissues" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_4">
+<span class="md-nav__icon md-icon"></span>
+          Tissues
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" id="__nav_5_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Sample%20Preparation/Urine/">Urine</a>
+</div>
+<nav aria-label="Urine" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Urine
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#soakwash">
+    Soak/Wash
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#after-soaking">
+    After soaking
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#washing-caps">
+    Washing caps
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tube-drying">
+    Tube Drying
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="tube-washing-for-nmr-metabolomics">Tube Washing for NMR Metabolomics</h1>
+<p>The purpose of this protocol is to ensure NMR tubes are washed to a standard compatible with NMR metabolomics – deviations from this protocol can result in contamination of samples with detergents and solvents that will make the resultant data unusable.</p>
+<h2 id="soakwash">Soak/Wash</h2>
+<ol>
+<li>Soak NMR tubes and caps with decon90 from squirt bottle (10% decon90)</li>
+<li>Ensure all tubes and caps are completely filled with decon90 and let it soak overnight</li>
+<li>Ensure all tubes' opening are facing upright so that decon90 does not leak out</li>
+</ol>
+<p><img alt="A picture containing text, kitchen appliance  Description automatically generated" src="Decon.png"/></p>
+<p><strong>Figure 1:</strong> Decon90 storage and squeeze bottle.</p>
+<h2 id="after-soaking">After soaking</h2>
+<ol>
+<li>Rinse out decon90 from the NMR tubes using glass pipette (rinse does not need to be thorough, as long as water displaces some decon90).</li>
+<li>Set up water pump which helps to wash the NMR tubes thoroughly</li>
+</ol>
+<p><img alt="A picture containing text, different, items, various  Description automatically generated" src="PumpSetup.png"/></p>
+<p><strong>Figure 2:</strong> set up for the water pump. a) location for multitube adaptor b) fully insert 10 upended tubes over the green straws within the adaptor c) make a seal between the adaptor and the vacuum flask d) attach the pump tubing to the vacuum flask outlet.</p>
+<ol>
+<li>Ensure 5 litres of water is added to the adaptor and pumped through the tubes (in order to do this you need to empty the bottom chamber 5 times – do not load more than 1 litre before emptying the bottom chamber).</li>
+</ol>
+<blockquote>
+<p><mark>!WARNING!</mark> avoid getting water into the trap (this prevents water being drawn into the electric pump and thus electrical failure).</p>
+</blockquote>
+<h2 id="washing-caps">Washing caps</h2>
+<ol>
+<li>
+<p>Remove decon90 from the beaker the caps are in and Rinse the caps in another beaker thoroughly with miliQ water, preferably 7-8 times</p>
+</li>
+<li>
+<p>After washing, dry using the air jet to dry the tubes and caps</p>
+</li>
+<li>
+<p>After drying the tubes using the air jet, look at the tubes under light to check for dirt on the outer surface of the tubes. Clean when necessary.</p>
+</li>
+<li>
+<p>Keep the clean tubes and caps in a dry beaker.</p>
+</li>
+</ol>
+<h2 id="tube-drying">Tube Drying</h2>
+<ol>
+<li>
+<p>Use the airflow from the piped gas line (bottom wall-mounted tap behind the ELGA water purifier). </p>
+</li>
+<li>
+<p>Angle the tap to ~5 o'clock to ensure the air-flow is not too vigorous.</p>
+</li>
+<li>
+<p>Dry each tube using white lint-free tissue to recover any water droplets by upending the tube over the tube dry station to the right of sink (for 3mm tubes carefully attach a glass Pasteur pipette to the top of the drying rod using the rubber attachment provided).</p>
+</li>
+<li>
+<p>Turn off the airflow after use.</p>
+</li>
+</ol>
+<blockquote>
+<p><mark>!WARNING!</mark> Failure to turn off the airflow prevents air compressor being available for the NMR spectrometers (for hydraulics of auto samplers and lifting/lowering samples into the magnet so this step is ESSENTIAL to maintain Facility operation.</p>
+</blockquote>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: A selection of statistical analyses in MetaboAnalyst" class="md-footer__link md-footer__link--prev" href="../../Data%20Analysis/Statistical%20Analyses/Statistical%20Analysis%20in%20MetaboAnalyst/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              A selection of statistical analyses in MetaboAnalyst
+            </div>
+</div>
+</a>
+<a aria-label="Next: Background Reading" class="md-footer__link md-footer__link--next" href="../../Resources/Background%20Reading/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Background Reading
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+<script src="../../js/print-site.js"></script>
+<script src="../../javascripts/config.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
