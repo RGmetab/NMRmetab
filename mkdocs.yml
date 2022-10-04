@@ -68,3 +68,4 @@ plugins:
   - mermaid2:
       arguments:
         securityLevel: 'loose'
+  - print-site
